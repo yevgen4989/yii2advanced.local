@@ -1,0 +1,21 @@
+.delete-account{
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    width: 50%;
+    color: #495057;
+    text-align: inherit;
+    font-weight: 300;
+    transition: all 250ms cubic-bezier(.27,.01,.38,1.06);
+    margin: 10px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+.delete-account:hover, .delete-account:focus{
+    z-index: 1;
+    text-decoration: none;
+    color: #495057;
+    background-color: #f8f9fa;
+}

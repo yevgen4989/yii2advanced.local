@@ -1,0 +1,67 @@
+<?php
+
+/* @var $this \yii\web\View */
+/* @var $content string */
+
+use yii\helpers\Html;
+use yii\bootstrap\Nav;
+use yii\bootstrap\NavBar;
+use yii\helpers\Url;
+use yii\widgets\Breadcrumbs;
+use frontend\assets\AppAsset;
+use common\widgets\Alert;
+
+AppAsset::register($this);
+?>
+<?php $this->beginPage() ?>
+<!DOCTYPE html>
+<html lang="<?= Yii::$app->language ?>">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset="<?= Yii::$app->charset ?>"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php $this->registerCsrfMetaTags() ?>
+    <title><?= Html::encode($this->title) ?></title>
+    <?php $this->head() ?>
+
+    <?
+    $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => Url::to(['/front/images/favicon.png'])]);
+    ?>
+
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <?
+    $this->registerCssFile('@web/dashboard/styles/bootstrap.min.css');
+    $this->registerCssFile('@web/dashboard/styles/shards-dashboards.1.1.0.min.css');
+    $this->registerCssFile('@web/dashboard/styles/extras.1.1.0.min.css');
+    $this->registerCssFile('@web/dashboard/styles/styles.css');
+    ?>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+</head>
+<?php $this->beginBody() ?>
+<body class="h-100">
+
+<?= $content ?>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<?=$this->registerJsFile('@web/dashboard/scripts/bootstrap.min.js');?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+<script src="https://unpkg.com/shards-ui@latest/dist/js/shards.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sharrre/2.0.1/jquery.sharrre.min.js"></script>
+<?
+$this->registerJsFile('@web/dashboard/scripts/extras.1.1.0.min.js');
+$this->registerJsFile('@web/dashboard/scripts/shards-dashboards.1.1.0.min.js');
+$this->registerJsFile('@web/dashboard/scripts/app/app-blog-overview.1.1.0.js');
+?>
+
+
+
+<?php $this->endBody() ?>
+</body>
+</html>
+<?php $this->endPage() ?>

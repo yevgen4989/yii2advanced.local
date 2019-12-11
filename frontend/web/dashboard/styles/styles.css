@@ -1,0 +1,77 @@
+@import "shards-dashboards.1.1.0.min.css";
+.main-sidebar .social-list .nav .nav-item .nav-link.active,
+.main-sidebar .social-list .nav .nav-item .nav-link:hover,
+.main-sidebar .social-list .nav .nav-item.active,
+.main-sidebar .social-list .nav .nav-item:hover{
+    box-shadow: none;
+    color: #fff;
+}
+
+.main-sidebar .social-list .nav .nav-item.facebook .nav-link.active,
+.main-sidebar .social-list .nav .nav-item.facebook .nav-link:hover,
+.main-sidebar .social-list .nav .nav-item.facebook.active,
+.main-sidebar .social-list .nav .nav-item.facebook:hover{
+    box-shadow: none;
+    border: 1px #8b9dc3 solid;
+    color: #fff;
+    background-color: #3b5998;
+}
+
+.main-sidebar .social-list .nav .nav-item.instagram .nav-link.active,
+.main-sidebar .social-list .nav .nav-item.instagram .nav-link:hover,
+.main-sidebar .social-list .nav .nav-item.instagram.active,
+.main-sidebar .social-list .nav .nav-item.instagram:hover{
+    box-shadow: none;
+    border: 1px #f09433 solid;
+    color: #fff;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+.main-sidebar .social-list .nav .nav-item, .main-sidebar .social-list .nav .nav-link {
+    font-size: 1.25rem;
+}
+
+.main-sidebar .social-list .nav .nav-item{
+    text-overflow: unset;
+    min-width: 95%;
+    max-width: 95%;
+    padding: 0;
+    border-radius: 30px;
+    margin: 10px auto;
+    text-align: center;
+}
+.main-sidebar .social-list .nav .nav-item.facebook .nav-link{
+    background-color: #dfe3ee;
+    border: 1px #8b9dc3 solid;
+}
+.main-sidebar .social-list .nav .nav-item.instagram .nav-link{
+    border: 1px #f09433 solid;
+    color: #f09433;
+}
+
+.main-sidebar .social-list .nav .nav-link{
+    text-overflow: unset;
+    min-width: 95%;
+    max-width: 100%;
+    border-radius: 30px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0;
+    color: #3b5998;
+}
+
+.main-content .card-small .card-body table tbody tr td.social{
+    font-size: 35px;
+    padding: 0 .75rem;
+}
+
+.main-content .card-small .card-body table tbody tr td.icon-novaya-pochta img{
+    max-width: 30px;
+}
+
+.main-content .card-small .card-body table tbody tr td.icon-ukr-pochta img{
+    max-width: 30px;
+}
+
